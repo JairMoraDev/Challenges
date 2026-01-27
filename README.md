@@ -1,17 +1,16 @@
 # Node.js Advanced Challenges
 
-Este repositorio está dedicado a la resolución de retos avanzados de Node.js, enfocados en el rendimiento, la escalabilidad y el uso profundo de las APIs nativas de la plataforma.
+This repository is dedicated to solving advanced Node.js challenges, focusing on performance, scalability, and the in-depth use of the platform's native APIs.
 
-## Proyectos y Retos
+## Projects and Challenges
 
 ### 📂 [LogProcessingService](./LogProcessingService/)
-Un servicio de procesamiento de logs de alto rendimiento capaz de manejar archivos masivos (1GB - 5GB) de forma eficiente.
+A high-performance log processing service capable of efficiently handling massive files (1GB - 5GB).
 
-*   **Descripción:** Implementación de un pipeline de procesamiento utilizando **Stream Processing** y **Event-Driven Architecture**.
-*   **Características Clave:** 
-    *   Uso de Node.js puro (sin dependencias externas).
-    *   Gestión manual de memoria con un uso de Heap constante (<100MB).
-    *   Procesamiento no bloqueante para mantener el Event Loop libre.
-    *   Implementación de streams personalizados (`LineSplitter`, `LogParser`).
+* **Description:** Implementation of a processing pipeline using **Stream Processing** and **Event-Driven Architecture**.
+* **Key Features:** * Built using pure Node.js (no external dependencies).
+    * Manual memory management with constant Heap usage (<100MB).
+    * Non-blocking processing to keep the Event Loop free.
+    * Implementation of custom streams (`LineSplitter`, `LogParser`).
 
 ---
