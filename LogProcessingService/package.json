@@ -1,0 +1,16 @@
+{
+  "name": "log-processing-service",
+  "version": "1.0.0",
+  "description": "High performance log processing service using native Node.js streams",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "start": "node src/index.js",
+    "generate:logs": "node src/utils/generate-logs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0"
+}
