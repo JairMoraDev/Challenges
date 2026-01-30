@@ -1,0 +1,20 @@
+{
+  "name": "event-driven-job-queue",
+  "version": "1.0.0",
+  "description": "In-memory Job Queue System using Node.js native capabilities",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "job-queue",
+    "event-driven",
+    "nodejs",
+    "async"
+  ],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0"
+}
