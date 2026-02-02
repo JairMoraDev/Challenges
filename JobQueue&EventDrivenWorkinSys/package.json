@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "start": "node src/index.js"
+    "start": "node src/index.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "keywords": [
     "job-queue",
@@ -16,5 +17,8 @@
   ],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.0",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
