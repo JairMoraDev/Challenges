@@ -52,7 +52,7 @@ const jobBTask = async (job, signal) => {
       for (let i = 0; i < 20; i++) {
         // 1. Validation: Check signal manually inside loops
         if (signal.aborted) {
-            console.log(`   -> [Job B] ⚠️ Detected signal.aborted at step ${i}!`);
+            console.log(`   -> [Job B] Detected signal.aborted at step ${i}!`);
             throw signal.reason || new Error('Aborted by signal');
         }
         await setTimeout(100); 
@@ -60,7 +60,7 @@ const jobBTask = async (job, signal) => {
   } catch (err) {
       // 2. Validation: Handle cleanup
       if (signal.aborted) {
-          console.log(`   -> [Job B] 🛑 CLEANUP: Received signal reason: "${signal.reason?.message}". Stopping work.`);
+          console.log(`   -> [Job B] CLEANUP: Received signal reason: "${signal.reason?.message}". Stopping work.`);
           return; 
       }
       throw err;
